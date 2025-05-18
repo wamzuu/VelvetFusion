@@ -1,0 +1,109 @@
+{
+  "Fool": {
+    "Magician": "Death",
+    "Priestess": "Moon",
+    "Empress": "Hanged Man",
+    "Emperor": "Temperance",
+    "Hierophant": "Hermit",
+    "Lovers": "Chariot",
+    "Chariot": "Moon",
+    "Justice": "Star",
+    "Hermit": "Priestess",
+    "Fortune": "Lovers",
+    "Strength": "Death",
+    "Hanged Man": "Tower",
+    "Death": "Strength",
+    "Temperance": "Heirophant",
+    "Devil": "Temperance",
+    "Tower": "Empress",
+    "Star": "Magician",
+    "Moon": "Justice",
+    "Sun": "Justice",
+    "Judgement": "Sun"
+  },
+  "Magician": {
+    "Priestess": "Temperance",
+    "Empress": "Justice",
+    "Emperor": "Hanged Man",
+    "Hierophant": "Death",
+    "Lovers": "Devil",
+    "Chariot": "Priestess",
+    "Justice": "Emperor",
+    "Hermit": "Lovers",
+    "Fortune": "Justice",
+    "Strength": "Fool",
+    "Hanged Man": "Empress",
+    "Death": "Hermit",
+    "Temperance": "Chariot",
+    "Devil": "Hierophant",
+    "Tower": "Temperance",
+    "Star": "Priestess",
+    "Moon": "Lovers",
+    "Sun": "Hierophant",
+    "Judgement": "Strength"
+  },
+  "Priestess": {
+    "Empress": "Emperor",
+    "Emperor": "Empress",
+    "Hierophant": "Magician",
+    "Lovers": "Temperance",
+    "Chariot": "Justice",
+    "Justice": "Star",
+    "Hermit": "Fortune",
+    "Fortune": "Strength",
+    "Strength": "Hanged Man",
+    "Hanged Man": "Moon",
+    "Death": "Devil",
+    "Temperance": "Justice",
+    "Devil": "Death",
+    "Tower": "Magician",
+    "Star": "Hierophant",
+    "Moon": "Empress",
+    "Sun": "Moon",
+    "Judgement": "Justice"
+  },
+  "Empress" :{},
+  "Emperor" : {},
+  "Hierophant": {},
+  "Lovers": {},
+  "Chariot": {},
+  "Justice": {},
+  "Hermit": {},
+  "Fortune": {},
+  "Strength": {},
+  "Hanged Man": {},
+  "Death": {},
+  "Temperance": {
+    "Devil": "Fool",
+    "Tower": "Fortune",
+    "Star": "Sun",
+    "Moon": "Fortune",
+    "Sun": "Magician",
+    "Judgement": "Hermit"
+  },
+  "Devil": {
+    "Tower": "Magician",
+    "Star": "Strength",
+    "Moon": "Chariot",
+    "Sun": "Hermit",
+    "Judgement": "Lovers"
+  },
+  "Tower": {
+    "Star": "Death",
+    "Moon": "Hermit",
+    "Sun": "Emperor",
+    "Judgement": "Moon"
+  },
+  "Star": {
+    "Moon": "Temperance",
+    "Sun": "Judgement",
+    "Judgement": "Fortune"
+  },
+  "Moon": {
+    "Sun": "Empress",
+    "Judgement": "Fool"
+  },
+  "Sun": {
+    "Judgement": "Death"
+  }
+}
