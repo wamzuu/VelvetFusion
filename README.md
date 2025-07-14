@@ -38,16 +38,16 @@ A Java-based command-line application for calculating Persona fusions, inspired 
 src/
 ├── main/
 │   ├── java/
-│   │   ├── Main.java                    # CLI entry point
-│   │   ├── Persona.java                 # Persona data model
-│   │   ├── PersonaSearch.java           # Search functionality with fuzzy matching
-│   │   ├── FusionCalculator.java        # Core fusion logic
-│   │   ├── DataLoader.java              # JSON data loading utilities
+│   │   ├── Main.java                     # CLI entry point
+│   │   ├── Persona.java                  # Persona data model
+│   │   ├── PersonaSearch.java            # Search functionality with fuzzy matching
+│   │   ├── FusionCalculator.java         # Core fusion logic
+│   │   ├── DataLoader.java               # JSON data loading utilities
 │   │   ├── PersonaNotFoundException.java # Custom exception
-│   │   └── PersonaViewer.java           # Future display component
+│   │   └── PersonaViewer.java            # Future display component
 │   └── resources/
-│       ├── personaData.json             # Persona database
-│       └── fusionChart.json             # Arcana fusion rules
+│       ├── personaData.json              # Persona database
+│       └── fusionChart.json              # Arcana fusion rules
 ```
 
 ## Data Files
@@ -140,11 +140,6 @@ Examples that work:
 - "jacko lantern" → "Jack-o'-Lantern"
 - "ARSENE" → "Arsene"
 
-### Error Handling
-- Graceful handling of persona not found
-- Invalid fusion combinations
-- Malformed data files
-
 ## Current Limitations
 - Limited persona database (11 personas)
 - Basic fusion rules (no special fusion cases)
@@ -158,19 +153,6 @@ This CLI version serves as the foundation for a planned web application:
 - **Phase 3**: Next.js frontend interface
 - **Phase 4**: Database migration with expanded persona data
 - **Phase 5**: Advanced features (reverse fusion, fusion chains, etc.)
-
-## Architecture Notes
-
-The application follows clean architecture principles:
-- **Data Layer**: JSON files and DataLoader
-- **Domain Layer**: Persona model and business logic
-- **Service Layer**: PersonaSearch and FusionCalculator
-- **Presentation Layer**: CLI interface in Main
-
-This structure will facilitate the upcoming migration to a web-based architecture.
-
-## Contributing
-This is the baseline CLI version. Future development will focus on the web application evolution. See roadmap for planned improvements.
 
 ---
 
