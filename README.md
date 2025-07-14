@@ -19,11 +19,8 @@ A Java-based command-line application for calculating Persona fusions, inspired 
 - [How Fusion Works](#how-fusion-works)
 - [Features in Detail](#features-in-detail)
     - [Fuzzy Search](#fuzzy-search)
-    - [Error Handling](#error-handling)
 - [Current Limitations](#current-limitations)
 - [Roadmap](#roadmap)
-- [Architecture Notes](#architecture-notes)
-- [Contributing](#contributing)
 
 ## Features
 
