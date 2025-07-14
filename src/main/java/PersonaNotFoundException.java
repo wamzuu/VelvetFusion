@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class PersonaNotFoundException {
+public class PersonaNotFoundException extends Throwable {
+    public PersonaNotFoundException(String s) {
+        super(s);
+    }
 }

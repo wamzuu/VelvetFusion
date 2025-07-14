@@ -1,4 +1,48 @@
-package PACKAGE_NAME;
+import java.io.IOException;
+import java.util.Map;
 
 public class PersonaSearch {
+    private Map<String, Persona> personaData;
+
+    public PersonaSearch() throws IOException {
+       this.personaData = DataLoader.loadPersonaData("src/main/resources/personaData.json");
+
+        if (personaData == null || personaData.isEmpty()) {
+            throw new IOException("Failed to load persona data or data is empty");
+        }
+    }
+
+
+    private String normalize(String name) {
+        return name.toLowerCase().replaceAll("[^a-z]", "");
+    }
+
+    private String findPersonaByName(String inputName) {
+        String normalizedInput = normalize(inputName);
+
+        for (String personaName : personaData.keySet()) {
+            if (normalize(personaName).equals(normalizedInput)) {
+                return personaName;
+            }
+        }
+        return null;
+    }
+
+    public Persona find(String name) throws PersonaNotFoundException {
+        String actualName = findPersonaByName(name);
+        if (actualName == null) {
+            throw new PersonaNotFoundException("Persona not found: " + name);
+        }
+        return personaData.get(actualName);
+    }
+
+    // Helper method to get the actual name (useful for display)
+    public String getActualName(String inputName) {
+        return findPersonaByName(inputName);
+    }
+
+    // Utility method to list all personas
+    public Map<String, Persona> getAllPersonas() {
+        return personaData;
+    }
 }
