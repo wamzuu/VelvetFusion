@@ -15,10 +15,11 @@ public class Main {
             while (true) {
                 System.out.println("Welcome! Enter a number or 'exit' to quit.");
                 System.out.println("\n" +
-                        "1. List Persona\n" +
-                        "2. Find Persona\n" +
-                        "3. Fuse Persona\n" +
-                        "4. Quit");
+                                    "1. List Persona\n" +
+                                    "2. Find Persona\n" +
+                                    "3. Fuse Persona\n" +
+                                    "4. Quit");
+
                 int option = scanner.nextInt();
                 scanner.nextLine();
 
