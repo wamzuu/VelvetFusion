@@ -7,18 +7,18 @@ A Java-based command-line application for calculating Persona fusions, inspired 
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Data Files](#data-files)
-    - [personaData.json](#personadatajson)
-    - [fusionChart.json](#fusionchartjson)
+  - [personaData.json](#personadatajson)
+  - [fusionChart.json](#fusionchartjson)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Dependencies](#dependencies)
-    - [Running the Application](#running-the-application)
+  - [Prerequisites](#prerequisites)
+  - [Dependencies](#dependencies)
+  - [Running the Application](#running-the-application)
 - [Usage](#usage)
-    - [Menu Options](#menu-options)
-    - [Example Usage](#example-usage)
+  - [Menu Options](#menu-options)
+  - [Example Usage](#example-usage)
 - [How Fusion Works](#how-fusion-works)
 - [Features in Detail](#features-in-detail)
-    - [Fuzzy Search](#fuzzy-search)
+  - [Fuzzy Search](#fuzzy-search)
 - [Current Limitations](#current-limitations)
 - [Roadmap](#roadmap)
 
@@ -50,7 +50,9 @@ src/
 ## Data Files
 
 ### personaData.json
+
 Contains persona information with arcana and level:
+
 ```json
 {
   "Arsene": { "arcana": "Fool", "lvl": 1 },
@@ -60,7 +62,9 @@ Contains persona information with arcana and level:
 ```
 
 ### fusionChart.json
+
 Defines fusion rules between different arcana:
+
 ```json
 {
   "Fool": {
@@ -73,11 +77,14 @@ Defines fusion rules between different arcana:
 ## Getting Started
 
 ### Prerequisites
+
 - Java 11 or higher
 - Jackson library for JSON processing
 
 ### Dependencies
+
 Add to your `pom.xml`:
+
 ```xml
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
@@ -87,9 +94,11 @@ Add to your `pom.xml`:
 ```
 
 ### Running the Application
+
 1. Clone the repository
 2. Ensure JSON data files are in `src/main/resources/`
 3. Compile and run:
+
 ```bash
 javac -cp "path/to/jackson-jars/*" src/main/java/*.java
 java -cp ".:path/to/jackson-jars/*" Main
@@ -98,12 +107,14 @@ java -cp ".:path/to/jackson-jars/*" Main
 ## Usage
 
 ### Menu Options
+
 1. **Find Persona**: Search for a specific persona by name
 2. **Fuse Persona**: Calculate fusion result between two personas
 
 ### Example Usage
 
 **Persona Search:**
+
 ```
 Enter persona (or 'exit' to quit): jack frost
 Jack Frost
@@ -112,6 +123,7 @@ level: 11
 ```
 
 **Fusion Calculation:**
+
 ```
 Enter first persona: arsene
 Enter second persona: pixie
@@ -127,17 +139,21 @@ Fusion result: Mandrake
 ## Features in Detail
 
 ### Fuzzy Search
+
 The search function normalizes input by:
+
 - Converting to lowercase
 - Removing special characters and spaces
 - Matching against all persona names
 
 Examples that work:
+
 - "jack frost" → "Jack Frost"
 - "jacko lantern" → "Jack-o'-Lantern"
 - "ARSENE" → "Arsene"
 
 ## Current Limitations
+
 - Limited persona database (11 personas)
 - Basic fusion rules (no special fusion cases)
 - CLI-only interface
@@ -145,7 +161,9 @@ Examples that work:
 - No fusion chain calculations
 
 ## Roadmap
+
 This CLI version serves as the foundation for a planned web application:
+
 - **Phase 2**: Spring Boot REST API backend
 - **Phase 3**: Next.js frontend interface
 - **Phase 4**: Database migration with expanded persona data
