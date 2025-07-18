@@ -153,5 +153,5 @@ This CLI version serves as the foundation for a planned web application:
 
 ---
 
-**Version**: 1.0 (CLI)  
+**Version**: v0.1 (CLI)  
 **Status**: Complete baseline for web application migration
