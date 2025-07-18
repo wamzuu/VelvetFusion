@@ -38,9 +38,7 @@ public class Main {
                     System.out.print("Return to main menu? (y/n): ");
                     String input = scanner.nextLine();
 
-                    if (input.toLowerCase().charAt(0) == 'y') {
-                        continue;
-                    } else {
+                    if (input.toLowerCase().charAt(0) != 'y') {
                         break;
                     }
 
@@ -61,9 +59,7 @@ public class Main {
                         System.out.print("Search another? (y/n): ");
                         String exit = scanner.nextLine();
 
-                        if (exit.toLowerCase().charAt(0) == 'y') {
-                            continue;
-                        } else {
+                        if (exit.toLowerCase().charAt(0) != 'y') {
                             searchLoop = false;
                         }
                     }
@@ -87,9 +83,7 @@ public class Main {
                         System.out.print("Fuse another? (y/n): ");
                         String exit = scanner.nextLine();
 
-                        if (exit.toLowerCase().charAt(0) == 'y') {
-                            continue;
-                        } else {
+                        if (exit.toLowerCase().charAt(0) != 'y') {
                             fuseLoop = false;
                         }
                     }
