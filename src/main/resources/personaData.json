@@ -1,0 +1,13 @@
+{
+  "Arsene": { "arcana": "Fool", "lvl": 1 },
+  "Pixie": { "arcana": "Lovers", "lvl": 2 },
+  "Agathion": { "arcana": "Chariot", "lvl": 3 },
+  "Jack-o'-Lantern": { "arcana": "Magician", "lvl": 2 },
+  "Mandrake": { "arcana": "Death", "lvl": 3 },
+  "Bicorn": { "arcana": "Hermit", "lvl": 4 },
+  "Silky": { "arcana": "Priestess", "lvl": 6 },
+  "Incubus": { "arcana": "Devil", "lvl": 5 },
+  "Berith": { "arcana": "Hierophant", "lvl": 9 },
+  "Succubus": { "arcana": "Moon", "lvl": 7 },
+  "Jack Frost": { "arcana": "Magician", "lvl": 11 }
+}
